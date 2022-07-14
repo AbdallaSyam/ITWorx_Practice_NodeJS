@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <div >
+
+      <% products.map((product, index)=>{%>
+          <div>
+
+            <h3><%=product.id%></h3>
+            <p><%=product.ProductName%></p>
+            
+              <a href="/products/<%=product._id%>"">Click Here to view the Product</a>
+
+          </div>
+      <% }) %>
+      
+    </div>
+  </body>
+</html>
